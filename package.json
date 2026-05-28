@@ -1,0 +1,22 @@
+{
+  "name": "live-auction",
+  "version": "1.0.0",
+  "description": "Shopify Live Auction App — Whatnot-style auctions for any Shopify store",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names server,client --prefix-colors blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "install:all": "npm install --prefix server && npm install --prefix client --legacy-peer-deps"
+  },
+  "keywords": [
+    "shopify",
+    "auction",
+    "live-auction"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
